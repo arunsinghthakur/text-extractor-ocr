@@ -1,0 +1,35 @@
+<html>
+
+<head></head>
+
+<body>
+  <h3>Capture text</h3>
+  <hr>
+  
+  <h4>(Option 1.) Manually select an image to capture text from:</h4>
+  <input type="file" id="image" style="background-color: bisque;"/>
+  <br><br>
+  <button id="convertImage" style="background-color: bisque;">Submit</button>
+  
+  <hr>
+  
+  <h4>(Option 2.) Copy an image URL to capture text from:</h4>
+  <input type="text" id="url" size="77" style="height: 30px;" placeholder="https://www.example.com/demo.png">
+  <br><br>
+  <button id="convertImageUrl" style="background-color: bisque;">Submit</button>
+  <hr>
+  
+  <span>
+    <h4>(Option 3.) Capture part of browser screen to capture text from:</h4>
+    <button id="cropBtn" style="background-color: bisque;">Crop Screen</button>
+  </span>
+
+  <hr>
+  <br>
+
+  <iframe id="iframe" src="sandbox.html" width="500" height="300" allow="clipboard-read; clipboard-write"
+    sandbox="allow-scripts allow-modals" style="border: none;"></iframe>
+  <script src="popup.js"></script>
+</body>
+
+</html>

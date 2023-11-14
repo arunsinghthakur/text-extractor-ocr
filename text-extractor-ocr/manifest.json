@@ -1,0 +1,22 @@
+﻿{
+  "name": "Text Extractor",
+  "description": "This extension can copy text from image using OCR",
+  "version": "1.0",
+  "manifest_version": 3,
+  "sandbox": {
+    "pages": [
+      "sandbox.html"
+    ]
+  },
+  "content_security_policy": {
+    "sandbox": "sandbox allow-scripts;"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "Icon.png"
+  },
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "author": "Arun Singh"
+}
